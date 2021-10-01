@@ -10,7 +10,7 @@ source:
   sha256: 46a1280b32fb210dc64f277f4ad5c715b46fb076934a679ac31257506915abd8
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - gff3-to-ddbj = gff3toddbj:main
@@ -27,7 +27,9 @@ requirements:
   run:
     - bcbio-gff >=0.6.6
     - biopython >=1.75
-    - python
+    - pysam >=0.16
+    - samtools
+    - python >=3.6
     - toml
 
 test:
